@@ -17,10 +17,10 @@ body{
 .calculator{
 	width: 320px;
 	height: 530px;
-	background-color: #eaedef;
+    background-color: #eaedef;
 	margin: 0 auto;
 	border-radius: 10px;
-	box-shadow: 5px 5px 5px black;
+	box-shadow: 5px 10px 5px black;
 }
 #result{
     height: 130px;
