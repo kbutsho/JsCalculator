@@ -1,21 +1,114 @@
 body{
     margin: 0;
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/bg.jpg);
+    font-family: 'Yusei Magic', sans-serif;
+}
+*{
+    margin: 0;
 }
 .container{
     width: 90%;
     height: 100vh;
+    margin : 0 auto;
     display: flex;
     align-items: center;
 }
 .calculator{
-    height: 520px;
-    width: 320px;
-    background-color: #eaedef;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgb(149, 37, 37);   
+	width: 320px;
+	height: 530px;
+	background-color: #eaedef;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px red;
 }
-button{
+#result{
+    height: 130px;
+}
+#text{
+    margin: 5px 10px 0 10px;
+    font-size: 12px;
+}
+#txt{
+    background-color: violet;
+    display: inline-block;
+    padding: 0 5px;
     border-radius: 5px;
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 20px;
+	color: #919191;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 5px 0 5px;
+    font-size: 30px;
+    background-color: blueviolet;
+    padding : 0 10px;
+    color: white;
+    border-radius: 5px;
+}
+#keyboard{
+    height: 400px;
+    background-color:skyblue;
+    border-radius: 10px;
+}
+.operator, .number, .empty {
+    width: 50px;
+    height: 50px;
+    margin:15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.number{
+    background-color: white;
+}
+.empty{
+    background-color: red;
+}
+.number:hover {
+    background-color: rgb(255, 7, 7);
+}
+.operator:hover{
+    background-color: rgb(255, 7, 7);
+}
+.number, .operator{
+    cursor: pointer;
+}
+.operator{
+    background-color: rgb(255, 251, 3);
+}
+.operator:active, .number:active{
+    font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #20b2aa;
+}
+button:nth-child(8){
+	font-size: 20px;
+	background-color: #ffa500;
+}
+button:nth-child(12){
+	font-size: 20px;
+	background-color: #f08080;
+}
+button:nth-child(16){
+	font-size: 20px;
+	background-color: #7d93e0;
+}
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #9477af;
 }
